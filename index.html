@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Sorina Nagra" />
+
+
+<title>Pressure Injuries</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">S. Nagra</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Pressure</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Pressure Injuries</h1>
+<h4 class="author">Sorina Nagra</h4>
+<h4 class="date">26 February, 2020</h4>
+
+</div>
+
+
+<script>$(function () {
+  $('[data-toggle="popover"]').popover();
+});</script>
+<div id="home" class="section level1">
+<h1>Home</h1>
+<p>Pressure injuries are often referred to as bedsores, pressure ulcer and decubitus ulcer. These terms describe impaired skin integrity due to prolonged, unrelieved pressure.</p>
+<p>1 in 4 Canadians in the healthcare system will develop impairment of tissue integrity. These injuries are preventable and heal-able with appropriate management.</p>
+<p><em>Prevention and treatment of pressure injuries are a major nursing priority in any health care setting.</em> <a href="#references">(Potter et al., 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="asessing-risk" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Asessing Risk</h1>
+<div id="population" class="section level2">
+<h2>Population</h2>
+<ul>
+<li><p>Patients with spinal cord injuries suffer the greatest risk for pressure ulcers (impaired sensation and movement) <a href="#references">(Hannon et al., 2016)</a></p></li>
+<li><p>Critically/ Chronically ill persons, those with Quadriplegia, older adults or those with diminished mental status or restricted mobility in orthopedics, hospice or oncology departments are at an increased risk. <a href="#references">(Hannon et al., 2016)</a></p></li>
+<li><p>This is not an exhaustive list, any co-morbidity that impacts one of the following risk factors will increase an individual’s risk for pressure related injury.</p></li>
+</ul>
+<p><br></br></p>
+</div>
+<div id="risk-factors" class="section level2">
+<h2>Risk factors</h2>
+<ul>
+<li>The ability of the tissue with withstand pressure depends on its integrity and the integrity of supportive structures
+<ul>
+<li>Extrinsic factors such as sheer, friction and moisture will dampen the ability of skin to withstand pressure and increase its susceptibility to damage</li>
+<li>The condition of supportive structures, such as blood vessels and collagen production, will affect the ability of the body to redistribute pressure</li>
+<li>The condition of supportive structures, such as blood vessel integrity and the bodies ability to produce collagen, will affect the ability of the body to redistribute/ withstand pressure.</li>
+<li>Intrinsic factors such as systemic factors, poor nutrition, age and low blood pressure diminish tissue tolerance to eternal pressure <a href="#references">(Potter et al., 2017)</a></li>
+</ul></li>
+<li>Primary extrinsic factors: pressure, sheering force, friction, moisture, impaired mobility</li>
+</ul>
+<p><br></br></p>
+<div id="primary-extrinsic-factors" class="section level3 tabset">
+<h3>Primary Extrinsic Factors</h3>
+<div id="pressure" class="section level4">
+<h4>Pressure</h4>
+<p>Tissue ischemia occurs when the pressure applied to the capillary exceeds normal capillary pressure, functionally occluding the capillary</p>
+<p>Normal capillary pressure: 15-32 mm Hg</p>
+<p>Pressure required to impede circulation varies between individuals</p>
+<p>If pressure is applied for 2 consecutive hours, tissue damage results</p>
+<p>Intensity/ Duration</p>
+<ul>
+<li><p>low pressure + long duration = injury</p></li>
+<li><p>high pressure + short duration= injury</p></li>
+</ul>
+<p><a href="#references">(Potter et al., 2017)</a></p>
+<p><img src="img/pressure.jpg" /> <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="shear-stress" class="section level4">
+<h4>Shear Stress</h4>
+<p>Stretching an angulation of blood vessels due to asymmetric sliding of tissue layers against one another, resulting in damage or thrombosis</p>
+<p>Occurs when the body or skeleton is moved but the skin remains fixed on the supportive surface <a href="#references">(Hannon et al., 2016)</a></p>
+<p>Shearing can occur passively or upon transfer</p>
+<p>Patient is sitting upright in bed, torso slides towards the foot of the bed, at the same time the skin remains fixed in place on bed linens</p>
+<p>Gravity pushes down on the body as moisture and friction create resistance between patient and surface <a href="#references">(Potter et al., 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="friction" class="section level4">
+<h4>Friction</h4>
+<p>Friction is the relative resistance cause by two surfaces sliding across each other</p>
+<p>“Sheet burn” is superficial injury to tissue caused by dragging of skin across bed linings. The injured area is often red and painful <a href="#references">(Potter et al., 2017)</a></p>
+<p>Injury may occur on elbows and heels as bedridden persons use them to aid in movement. <a href="#references">(Hannon et al., 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="moisture" class="section level4">
+<h4>Moisture</h4>
+<p>Persistent moisture softens skin and makes it more susceptible to damage</p>
+<p>May cause irritation or changes in the skins protective pH <a href="#references">(Hannon et al., 2016)</a></p>
+<p>Impairs the skins ability to resist mechanical forces (pressure/ shear)</p>
+<p>Risk of skin breakdown increases with exposure to body fluids</p>
+<p>Low risk: saliva, urine, <button class="btn btn-default" title="Inflammatory exudate" data-toggle="popover" data-content="Fluid, white blood cells, and dead tissue accumulate to form an exudate. [(Potter et al, 2017)](#references) " data-placement="top" data-trigger="hover">Inflammatory exudate</button>, (<button class="btn btn-default" title="Serosanguineous Drainage" data-toggle="popover" data-content="A mixture of clear and red fluid, described as pale, red and water unlike bright red sanguineous drainage which indicates active bleeding. [(Potter et al, 2017)](#references) " data-placement="top" data-trigger="hover">serosanguineous drainage</button>, <button class="btn btn-default" title="Purulent Exudate" data-toggle="popover" data-content="Purulent fluid is composed of thicker discharge containing pus where the color dependant of causative organism (yellow/ brown/ green). Serous drainage is composed of plasma, is typically colorless. [(Potter et al, 2017)](#references) " data-placement="top" data-trigger="hover">purulent exudate</button>), <button class="btn btn-default" title="Ascitic Fluid" data-toggle="popover" data-content="fluid accumulated in the peritoneal cavity [(Huang et al, 2014)](#references) " data-placement="top" data-trigger="hover">ascitic fluid</button></p>
+<p>Moderate risk: bile and stool</p>
+<p>High risk: gastric acid and pancreatic drainage <a href="#references">(Potter et al., 2017)</a></p>
+<p>Note: Any incontinent patient is considered to be at an increased risk of skin breakdown <a href="#references">(Hannon et al., 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="impaired-mobility" class="section level4">
+<h4>Impaired Mobility</h4>
+<p>Inability to independently change position <a href="#references">(Hannon et al., 2016)</a></p>
+<p>Increased/ complete reliance on others for movement increases risk <a href="#references">(RNAO, 2005)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="secondary-intrinsic-factors" class="section level3 tabset">
+<h3>Secondary Intrinsic Factors</h3>
+<p>Decreased sensation, nutrition, anemia, medications, cardiovascular changes, smoking</p>
+<div id="sensory-perception" class="section level4">
+<h4>Sensory Perception</h4>
+<p>The ability to respond meaningfully to pain and pressure</p>
+<p>Those with impaired perception will be unable to perceive, respond or alert others to tissue damage or injury <a href="#references">(Hannon et al., 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="altered-level-of-consciousness" class="section level4">
+<h4>Altered Level of Consciousness</h4>
+<p>Confused or disoriented patients may not be able to interpret cause of pain, respond appropriately, or communicate discomfort</p>
+<p>Those in coma (complete dependence) are unable to perceive or relieve pressure <a href="#references">(Hannon et al., 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="nutrition-hydration-status" class="section level4">
+<h4>Nutrition/ Hydration Status</h4>
+<p>Reduced nutritional intake results in increased risk of skin damage and diminished wound healing. <a href="#references">(Hannon et al., 2016)</a></p>
+<p>Adequate protein and hydration is required to maintain a positive nitrogen balance (intake of nitrogen through protein is greater then loss), which is essential for wound healing. <a href="#references">(Hannon et al., 2016)</a></p>
+<p>Negative nitrogen balance (more nitrogen excreted then consumed) is associated with illness/ injury and impedes the healing process.</p>
+<p>Wound healing dependant on availability of protein, vitamins (A and C) and trace minerals (zinc and copper). <a href="#references">(Potter et al., 2017)</a></p>
+<p>Reduced fluid intake, concentrated urine irritates skin in incontinent persons. <a href="#references">(Hannon et al., 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="circulatory-status" class="section level4">
+<h4>Circulatory Status</h4>
+<p>Ischemic injury is the primary mechanism for pressure ulcer development. Adequate tissue perfusion is necessary for wound healing.</p>
+<p>Comorbidities such as shock or cardiovascular disease caused by diabetes cause poor circulation.</p>
+<p>Tissue hypoxia impairs wound healing (collagen synthesis) and impairs tissue resistance to infection. <a href="#references">(Potter et al., 2017)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="other-risk-factors" class="section level3 tabset">
+<h3>Other Risk Factors</h3>
+<div id="infection" class="section level4">
+<h4>Infection</h4>
+<p>The bodies response to infection causes additional tissue destruction by the release of pro-inflammatory cytokines, delaying collagen synthesis and preventing epithelialization.</p>
+<p>Signs of infection: erythema of surrounding tissue, pain or tenderness, edema, new areas of slough/ breakdown, undermining, and changes in odour or a change in volume/ character of wound drainage <a href="#references">(Potter et al., 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="pain" class="section level4">
+<h4>Pain</h4>
+<p>Uncontrolled pain limits patient’s ability to tolerate movement. The patient’s response to pain, rapid breathing and tensing muscles, decreases tissue perfusion.</p>
+<p>Pain can trigger nausea/ limit nutritional intake. <a href="#references">(Potter et al., 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="age" class="section level4">
+<h4>Age</h4>
+<p>Immune impairment decreased macrophage function and delayed inflammatory response.</p>
+<p>Delayed wound healing via diminished collagen synthesis and epithelialization.</p>
+<p>Altered mental status/ psychological changes. <a href="#references">(Potter et al., 2017)</a></p>
+<p><br></br></p>
+</div>
+</div>
+</div>
+<div id="braden-scale" class="section level2">
+<h2>Braden scale</h2>
+<p>Validated pressure injury risk assessment tool. Ensures consistent, reliable and comparable assessment for all adults over 18 years of age.</p>
+<ul>
+<li>Score determines the intensity of prevention measures in relation to the probability of pressure injury occurrence. <a href="#references">(Abound &amp; Manna, 2019)</a></li>
+</ul>
+<p>Braden scale composed of 6 subscales. Sensory perception, moisture, activity mobility and nutrition are rated from 1-4 and Friction &amp; shear is rated from 1-3.</p>
+<p>Total score ranges from 6-23, the lower the score= greater harm/ risk.</p>
+<ul>
+<li><p>15-18- mild risk</p></li>
+<li><p>13-14 – moderate risk</p></li>
+<li><p>10-12 – high risk</p></li>
+<li><p>&lt; 10, very high risk</p></li>
+</ul>
+<p>If an individual subscale result is low, intervene to eliminate risk.</p>
+<p>If skin breakdown is present, indicates that risk factors are already present and prevention measures much be implemented. <a href="#references">(Potter et al., 2017)</a></p>
+<p><img src="img/Braden_Scale-1.png" /> <a href="http://www.bradenscale.com/images/bradenscale.pdf">Braden Scale</a> (Braden &amp; Bergstorm, 1998)</p>
+<p><br></br></p>
+</div>
+<div id="wound-healing" class="section level2 tabset">
+<h2>Wound Healing</h2>
+<div id="ability-to-heal" class="section level3">
+<h3>Ability to Heal</h3>
+<p>Existing pressure injuries can be categorized in terms of their ability to heal. Classification sets the stage of realistic treatment objectives and ensures the healthcare team, patient and family share expectations for patient outcomes and the care plan.</p>
+<p>Healable wound: Adequate perfusion of tissue following risk correction allows for healing. Maintenance wound: The wound has the potential to heal. Progress is stagnated by lack of resources or patient noncompliance.</p>
+<p>Non- healable wounds: Wound cannot heal due to patient comorbidity, negative protein balance or in inadequate perfusion of tissue. <a href="#references">(Sibbald et al, 2012)</a></p>
+</div>
+<div id="healing-process" class="section level3">
+<h3>Healing Process</h3>
+<p>Tissue repair can occur through the replacement of cells with cells of the same type, without scarring. Alternatively, scarring occurs as connective tissue replaces lost tissue. <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Wounds that do not permeate deeper layers, superficial abrasions/ partial- thickness wounds, typically heal by regeneration and do not leave a scar. (Potter et al, 2017) Epithelial tissue is composed of liable or continuously dividing cells that continuously replicate and can replace themselves. (Hannon et al, 2016) Preceding tissue repair, the inflammatory response is normally self- limited to the first 24 hours after tissue trauma. After resolution of inflammation, epithelial cells begin to regenerate. These cells proliferate at the wound edges and migrate across the wound bed. A moist wound bed promotes epithelial migration. A dry wound bed forces the cells to migrate down to a moist level before migrating across the wound bed, delaying wound healing. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Pressure Injuries are typically classified as full- thickness wounds. These are wounds that involve the full- thickness of the skin and extend into deeper tissue such as the dermis which cannot regenerate and is replaced with scare tissue.</p>
+<p>The inflammatory phase of a full-thickness wound is more profound, lasting up to 3 days. Hemostasis, the process of bleeding prevention, involves platelets aggregation and clot formation. Clotting creates a fibrin network that is later used for cellular repair. Damaged tissue and mast cells release inflammatory cytokines resulting in heat, redness and edema at the sight of injury. The inflammatory phase is beneficial, and cooling is unnecessary unless swelling occurs in a closed compartment like the neck or ankle where inflammation can cause damage. White bloods cells enter the site and remove debris, dead cells and protect against pathogens. Macrophages will release growth factors which promote fibroblast migration, which synthesize collagen (connective tissue) and form scar tissue. This stage of healing is dependant on the extent of inflammation, as profound or inadequate responses will result in delayed wound healing.</p>
+<p>The proliferative phase involves angiogenesis (formation of new blood vessels), filling of the wound with granulation tissue and epithelialization (resurfacing by new epithelial layer). Collagen is laid down by fibroblasts to provide structural integrity. The wound will contract, shrinking the area that needs to heal. Epithelial cells migrate to the wound edges and replace the surface of the wound. Healing at this stage can be impaired by age, impaired perfusion and nutrition.</p>
+<p>Remodeling/ maturation is the final healing stage where collagen scar tissue continues to gain strength over the course of years. Scar tissue tends to be less pigmented then normal skin and lacks the tensile strength of normal epithelial tissue increasing risk for subsequent pressure injury. <a href="#references">(Potter et al, 2017)</a></p>
+<p><br></br></p>
+</div>
+</div>
+</div>
+<div id="staging" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Staging</h1>
+<div id="development" class="section level2">
+<h2>Development</h2>
+<p>Pressure injured are caused by unrelieved pressure on the skin which impairs the flow of blood and lymph and leads to ischemic injury of the skin. These injuries can form on any part of the body subjected to pressure. They commonly occur over bony prominences from pressure exerted by supportive surfaces.</p>
+<p>When external pressured exceed normal capillary pressure (15-32 mm Hg) capillary flow is obstructed. Following 2 hours of impaired perfusion, tissue damage occurs due to oxygen deprivation and accumulation of metabolic end products.</p>
+<p>Less pressure is required to cause injury in those with impaired tissue perfusion and pressure applied to a small surface area is more damaging then pressure that is dispersed. Pressure injuries commonly occur on weight baring areas of the lower body such as the sacrum, coccygeal area, ischial tuberosity and greater trochanters.</p>
+<p>When pressure is applied on the surface of the skin and to intermediate tissue against a bony prominence, the greatest pressure is at the surface of the bone. When signs of a superficial lesion are first noted, underlying tissue damage has already occurred. <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="stages" class="section level2 tabset">
+<h2>Stages</h2>
+<p>Stages of Pressure Injuries are defined by the National Pressure Ulcer Advisory Panel (NPUAP). The NPUAP outline that preventative measures are the preferred methods of treatment.</p>
+<div id="stage-i" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Stage I</h3>
+<div id="description" class="section level4">
+<h4>Description</h4>
+<p>Defined area of persistent redness in lightly pigmented skin, may present as purple/ blue hues in darker skin <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Skin unbroken, high risk further damage <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Presence of blanchable erythema with risk factors (changes in sensation, temperature or firmness) precedes visual changes, implement preventive measures <a href="#references">(NPIAP, 2019)</a></p>
+<p>Note: purple and maroon discoloration may indicate deep tissue pressure injury. Color change may be preceded by pain or temperature changes. <a href="#references">(NPIAP, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="treatment" class="section level4">
+<h4>Treatment</h4>
+<p>Frequent turning, remove pressure <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="stage-ii" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Stage II</h3>
+<div id="description-1" class="section level4">
+<h4>Description</h4>
+<p>Skin is broken, loss of skin integrity, partial-thickness wound, epidermis is lost, and dermis is lost or exposed. Clinical manifestations: superficial abrasion, intact serum filled blister, or ruptured blister resulting in a shallow crater. <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+<div id="treatment-1" class="section level4">
+<h4>Treatment</h4>
+<p>When ulcers have little exudate, semipermeable/ occlusive dressings are used. <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="stage-iii" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Stage III</h3>
+<div id="description-2" class="section level4">
+<h4>Description</h4>
+<p>Full thickness of skin is lost. Damage and necrosis of subcutaneous tissue may extend down to but not permeate underlying facia. (Hannon et al, 2016) Depth depends on anatomical area, areas with significant adiposity can result in deep wounds/ undermining. <a href="#references">(NPIAP, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="treatment-2" class="section level4">
+<h4>Treatment</h4>
+<p>If necrotic tissue and exudate is present, debridement may be required via surgically, wet-to-dry dressings or use of proteolytic enzymes. <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="stage-iv" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Stage IV</h3>
+<div id="description-3" class="section level4">
+<h4>Description</h4>
+<p>Full thickness skin loss and necrosis with extensive damage/ destruction to underlying subcutaneous tissue. May involve muscle, bone and supporting structures like tendon or joint capsules. (Hannon et al, 2016) Visible slough, eschar and undermining may be present. <a href="#references">(NPIAP, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="treatment-3" class="section level4">
+<h4>Treatment</h4>
+<p>With deep injury, tunneling or undermining packing is required to eliminate the dead space and provide a surface for healing to commence.</p>
+<p>Extensive surgical intervention like skin grafts or myocutaneous flaps may be necessary. <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="unstageable" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Unstageable</h3>
+<div id="description-4" class="section level4">
+<h4>Description</h4>
+<p>Extent of tissue damage cannot be confirmed due to significant slough or eschar obstructing the wound. Full skin thickness is lost, will result in stage III or IV wound. {(Hannon et al, 2016)](#references)</p>
+<p>Stable eschar (dry, black and intact) without erythema or fluctuance on heel should not be softened or removed as it is acting as a protective cap. <a href="#references">(NPIAP, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="treatment-4" class="section level4">
+<h4>Treatment</h4>
+<p>Necrotic debris increases possibility of bacterial infection which delays wound healing. <a href="#references">(Hannon et al, 2016)</a></p>
+<p><br></br></p>
+</div>
+</div>
+</div>
+<div id="dressings" class="section level2 tabset">
+<h2>Dressings</h2>
+<p>Determining the appropriate dressing is based on the depth and diameter of the wound, the need to address infection, the need to maintain wound bed moisture, the condition of the tissue in the wound bed (need for debridement) and the presence of undermining or pain. <a href="#references">(National Pressure Injury Advisory Panel [NPIAP], 2019)</a></p>
+<div id="occlusive-dressings" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Occlusive dressings</h3>
+<p>Occlusive dressings prevent the loss of fluids and maintain a moist environment to promote epithelial cell migration. Wound fluid is thought to contain growth factors that enhance tissue repair. These dressings may relieve pain or prevent bacterial contamination Types of occlusive dressings differ in permeability, protective capabilities and come with their own sets of risks and advantages.</p>
+<div id="polymer-films" class="section level4">
+<h4>Polymer films</h4>
+<p>A semi-permeable adhesive sheet, impermeable to water and bacteria. The ability of moisture to permeate the membrane varies between films. Occlusive barrier protects against infection. <a href="#references">(Potter et al, 2016)</a></p>
+<p>Contraindicated with infected wounds. <a href="#references">(WUWHS, 2019)</a></p>
+<p><img src="img/Polymer%20films.png" /></p>
+<p><br></br></p>
+</div>
+<div id="hydrogels" class="section level4">
+<h4>Hydrogels</h4>
+<p>Gels, sheets or impregnated gauze of polymers with high water content to hydrate the wound bed and absorb exudate. Should not be used for draining wounds. Do not adhere and are easily removed.</p>
+<p>Sooth and reduce pain and promote a moist wound bed for healing. Aid in debridement by softening necrotic tissue. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Can be used for deeper wounds (stage III and IV) without excessive drainage. <a href="#references">(NPIAP, 2019)</a></p>
+<p><img src="img/Hydrogels.png" /></p>
+<p><br></br></p>
+</div>
+<div id="hydrocolloids" class="section level4">
+<h4>Hydrocolloids</h4>
+<p>Sheets are adhesive and occlusive and may contain a combination of gelatin, sodium, carboxymethylcellulose, polysaccharides or pectin.</p>
+<p>Promote healing by maintaining wound bed moisture as the gel layer on the wound facing side of the dressing is absorbed. They support granulating wounds and can be used in the debridement of necrotic wounds as they liquify necrotic debris.</p>
+<p>Contraindicated with fragile skin, heavy draining, infection or deep wounds. Often have a characteristic odor which should be noted and not confused with infection. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Typically used for stage II non infected injuries. <a href="#references">(NPIAP, 2019)</a></p>
+<p>Can be used as a preventative dressing in high risk, friction areas. <a href="#references">(Potter et al, 2017)</a></p>
+<p><img src="img/Hydrocolloids%20-1.png" /> <img src="img/Hydrocolloids%20-2.png" /></p>
+<p><br></br></p>
+</div>
+<div id="bio-membranes" class="section level4">
+<h4>Bio membranes</h4>
+<p>Can compose of human fibroblasts consolidated in a sheet with collagen, hyaluronic acid or platelet derived growth factor. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Contraindicated with infection, exudate, and known hypersensitivity to components of the product. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Collagen dressings are considered to improve wound healing and control inflammation when wounds are not healing.</p>
+<p>Platelet derived growth factors sometimes used in stage III and IV ulcers. <a href="#references">(NPIAP, 2019)</a></p>
+<p><img src="img/Bio%20membranes%201.png" /></p>
+<p>becaplermin = human derived growth factor</p>
+<p><img src="img/Bio%20membranes%202.png" /></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="debridement" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Debridement</h3>
+<div id="wet-to-dry-dressings" class="section level4">
+<h4>Wet-to-dry dressings</h4>
+<p>GGauze soaked with normal saline placed, packed into wound and removed after it has dried. Removing the dry dressing mechanically debrides the wound. This is a non- selective action as healthy tissue can adhere to the dressing and be removed with necrotic tissue and slough. Wet-to–dry dressings are often painful, wet-to-moist dressing use a similar approach but frequent dressing changes are used, and the gauze is not allowed to completely dry out. However, frequent dressing changes is proven to disrupt granulation tissue and cool the wound bed thereby disrupting healing.</p>
+<p><br></br></p>
+</div>
+</div>
+<div id="dressings-for-fragile-skin" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Dressings for fragile skin</h3>
+<div id="non-adherent-dressings" class="section level4">
+<h4>Non adherent dressings</h4>
+<ul>
+<li>Non adherent dressings: Protect fragile granulation tissue and provide a moist environment. This layer can remain undisturbed as second covering is replaced.</li>
+<li>Early forms included the use of petrolatum jelly which may have decreased water permeability. New petrolatum and silicone-based layers have better moisture- vapour transfer capability. <a href="#references">(Potter et al, 2017)</a> Petroleum based solutions are transparent and allow for skin inspection but increase the risk for folliculitis. <a href="#references">(WUWHS, 2019)</a></li>
+</ul>
+<p><br></br></p>
+</div>
+</div>
+<div id="dressing-for-perfuse-drainage" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Dressing for Perfuse drainage</h3>
+<div id="foams-and-superabsorbent-polymers" class="section level4">
+<h4>Foams and superabsorbent polymers</h4>
+<ul>
+<li><p>Foams and superabsorbent polymers (some are gel forming) are used to absorb exudate. Cotton and fiber-based dressings are primarily used as a secondary dressing to cover the area. <a href="#references">(WUWHS, 2019)</a></p>
+<ul>
+<li>Non - adhesive or adhesive foams are available in sheets or packing. Used on draining wounds and though some contain occlusive layers, these are contraindicated with wound drainage. They can be left in place for 7 days and are used to prevent maceration. <a href="#references">(Potter et al, 2017)</a></li>
+</ul></li>
+</ul>
+<p><br></br></p>
+</div>
+</div>
+<div id="negative-pressure-wound-therapy" class="section level3">
+<h3>Negative Pressure Wound Therapy</h3>
+<p>Dressings polyurethane or polyvinyl alcohol materials are used to pack into the wound and suction is established to remove exudate and promote wound healing. (Potter et al, 2017) This advanced technique requires special training but is often used as an early adjunct therapy to aid in reducing in depth of stage III and IV pressure injuries. <a href="#references">(NPIAP, 2019)</a></p>
+<p><img src="img/NPWT.png" /> <a href="https://www.e-aps.org/journal/Figure.php?xn=aps-42-59.xml&amp;id=">Source</a></p>
+</div>
+<div id="dressing-change" class="section level3">
+<h3>Dressing change</h3>
+<p>To improve patient tolerance during dressing change, numerically assess comfort/ pain and provide analgesia, ideally 30-45 minutes before the procedure.</p>
+<p>Preform hand hygiene, explain the procedure, provide privacy and position patient appropriately. After a second round of hand hygiene, apply clean gloves to remove dressing and assess the wound. Report the stage, color, and dimensions with a sterile cotton tipped applicator. When measuring the depth, gently probe edges and observe for undermining. Don sterile gloves and clean wound with normal saline or cleaning agent to remove debris and promote wound healing.</p>
+<p>Applying topical agents:</p>
+<ul>
+<li>Enzymatic debridement: thin layer over necrotic areas, thicker layers will not improve absorption. Apply non adherent gauze over the wound and tape in place</li>
+<li>Hydrogel: cover surface with gel using an applicator or gloved hand and cover with a secondary nonadherent gauze or transparent dressing.</li>
+<li>Calcium alginate or hydro fibre: material is lightly packed into the wound and is used to maintain moisture while removing excess drainage and apply a secondary nonadherent dressing or foam covering and secure with tape.</li>
+</ul>
+<p>With abnormal or detrimental changes in the wound such as increased drainage or foul odor notify the health care team and collect a sample for culture.</p>
+<p>Report the time and materials used for the dressing change and the patient’s tolerance. <a href="#references">(Potter et al, 2017)</a></p>
+<p><br></br></p>
+</div>
+</div>
+</div>
+<div id="complications" class="section level1 tabset">
+<h1>Complications</h1>
+<p>Pressure ulcers have a profound effect on an individual’s quality of life. The psychological impacts of a wound, wound management and their social supports and ability to cope should be assessed along side immediate complications such as restricted movement and pain. <a href="#references">(Potter et al, 2017)</a></p>
+<p>All stages of pressure ulcers predispose individuals to life- threatening complications, with increased risk with severity of the wound. There is a profound risk of infection in Stage III and IV injuries, when the protective function of the skin is lost. <a href="#references">(Abound &amp; Manna, 2019)</a></p>
+<p>Complications related to pressure injuries include cellulitis, gangrene, septicemia, osteomyelitis and necrotizing fasciitis.</p>
+<div id="cellulitis" class="section level2">
+<h2>Cellulitis</h2>
+<p>An acute infection of the skin involving the dermal and subcutaneous layers. Gram positive Staphylococcus aureus is the main causative pathogen. <a href="#references">(Sullivan &amp; Barra, 2018)</a> MRSA (Methicillin-Resistant Staphylococcus aureus) complicates treatment. S. aureus is opportunistic and does not cause disease in the healthy individuals it frequently colonizes. The bacteria can cause infection on entry to internal tissue or the blood stream. <a href="#references">(Taylor &amp; Unakal, 2019)</a></p>
+<p>Infected area will be red and tender with no area of induration. Complications if not adequately treated include septicemia, nephritis or death. <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Impairment of lymph drainage and vascularization of the area makes tissue susceptible to repeated infection. <a href="#references">(Culver, 2018)</a></p>
+<p>Comorbidities that predispose individuals to cellulitis impact perfusion of the tissue and include diabetes and chronic venous stasis. <a href="#references">(Culver, 2018)</a></p>
+<p><br></br></p>
+</div>
+<div id="gangrene" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Gangrene</h2>
+<p>Gangrene referred to a considerable mass of tissue necrosis and can be further classified as dry or moist. <a href="#references">(Hannon et al, 2019)</a></p>
+<div id="dry-gangrene" class="section level3">
+<h3>Dry Gangrene</h3>
+<p>Presents as shrunken, dry dark brown or black area and its spread is slow and limited to extremities. The patient is not symptomatic. Irritation caused by the necrotized tissue can cause a line of demarcation outlining the border between healthy and necrotized tissue. Can be converted to wet gangrene with infection.</p>
+<p><br></br></p>
+</div>
+<div id="wet-or-moist-gangrene" class="section level3">
+<h3>Wet or moist gangrene</h3>
+<p>Presents as cold, black, endemic skin lacking a pulse. Moisture is accompanied with a foul odor to indicate bacterial infection. Spread of infection is rapid and the lesion lacks a line of demarcation. The lesion is accompanied by severe systemic symptoms and can spread to internal organs, may result in death.</p>
+<p><br></br></p>
+</div>
+<div id="gas-gangrene" class="section level3">
+<h3>Gas gangrene</h3>
+<p>Results from infection with Clostridium perfringens or other Clostridium bacteria that typically inhabit soil.</p>
+<p>Capable of producing toxins that dissolve cell membranes, causing edema and hemolysis resulting in anemia.</p>
+<p>Bubbles of hydrogen sulfide can form in muscle causing a potentially fatal condition. Amputation may be necessary to prevent the spread of the infection.</p>
+<p><br></br></p>
+</div>
+</div>
+<div id="septicemia" class="section level2">
+<h2>Septicemia</h2>
+<p>Sepsis is the primary cause of death due to infection. In 2005 approximately 1 in 18 deaths involved sepsis with nosocomial infections resulting in 56% increased odds of mortality in comparison to community acquired cases. The only treatment available proven to reduce mortality is early identification and administration of supportive treatment. <a href="#references">(McCurdy, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="osteomyelitis" class="section level2">
+<h2>Osteomyelitis</h2>
+<p>A painful infection of the bones or joints is caused by Staphylococcus aureus 80% of the time. Clinical presentation includes fever, altered level of consciousness with local edema and pain. Flexion of joints near the infected area can also result in severe pain. Infections of the heel tend to lack systemic symptoms. <a href="#references">(Auday et al, 2018)</a></p>
+<p><br></br></p>
+</div>
+<div id="necrotizing-fasciitis" class="section level2">
+<h2>Necrotizing Fasciitis</h2>
+<p>High risk of mortality involving the infection of the deep fascia and necrosis of subcutaneous tissue.</p>
+<p>In clinical settings, where pressure injuries typically occur, Necrotizing fasciitis does not include Group A Streptococcus sp. (typically associated with community acquired infection).</p>
+<p>Early clinical presentation is like cellulitis; taught, eurythmic skin with no demarcation accompanied by systemic symptoms of fever, tachycardia and hypotension. Infection causes severe pain and spreads rapidly with visible changes in cm/ hour. Severe necrosis results in anesthesia of the infected area with later stages of the infection <a href="#references">(Culver, 2018)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="nursing-interventions" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Nursing Interventions</h1>
+<p>Wound healing exists on a continuum, weather the goal for the patient is maintenance or healing, the wound needs to be regularly reassessed and care plans need to be adjusted regularly. Your nursing judgment is valuable when determining a schedule for reassessment, as changes in the patient’s condition, application of new appliances and changes in external pressure all warrant reassessment.</p>
+<p><br></br></p>
+<div id="prevention" class="section level2">
+<h2>Prevention</h2>
+<p>Before the assessment a baseline needs to be established to determine the patients “normal” or typical skin condition. Pigmentation and aging may affect the manifestation of pressure injuries. A skin assessment commences on intake at HHS, according to policy, and is reassessed at least once every 24H in most cases.</p>
+<p>Inspection should be focused on bony prominences, around assistive devices. Skin breakdown can occur due to orthopedic devices like casts or braces and around tubes and catheters where contact can break down the skin. For example, when patients have nasal canaliculi, check around the nostrils and behind the ears for skin breakdown. Breakdown can present as redness, blistering or breaks in the skin.</p>
+<p>Hyperemia or skin redness is an early indicator of impaired tissue integrity. When hyperemia is present its important to document the location, size, color and reassess the area in an hour. If pressure is relieved after a period of ischemia, blood vessels will vasodilate resulting in transitory redness called reactive hyperemia or blanching hyperemia. Blanching is best visualised on in individual with a light skin tone as dark skin tones will not demonstrate the same change in color when pressure is applied.</p>
+<p>Non-blanching erythema involves persistent skin redness that does not lighten under pressure indicates probable deep tissue damage.</p>
+<p>When assessing the skin always have adequate natural or halogen light, avoid fluorescent lights. Observe for blanching of the area when pressure is removed, if patient has previously suffered a pressure injury this area of the skin may already be lighter. With deeper tissue injury or persistent inflammation, the area may appear purple- blue or violet.</p>
+<p>Light palpation of the surface of the skin with fingertips to detect tenderness or induration around the lesion. In early stages of pressure ulcer development, tissue may have reduced plasticity and feel lumpy or mushy in comparison to surrounding skin. If edema is present, the skin will appear taught and shiny. Assess changes in temperature around the skin with the back of the hand, cooler skin signifies impaired perfusion of the tissue.</p>
+<p>During the assessment its important to assess for risk factors such as a patient’s tolerance for pressure and their ability to meaningfully redistribute or communicate discomfort with the Braden scale. Patient preferences, such as habitual positioning may make the patient resistant to repositioning and increase the risk of skin breakdown.</p>
+<p>When reporting its important to describe the patients Braden score(s), skin appearance, describe position and turning intervals, any pressure reliving devices, prevention strategies or need for additional consults. <a href="#references">(Potter et al, 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="prevention-and-intervention" class="section level2 tabset">
+<h2>Prevention and Intervention</h2>
+<p>Prevention of pressure related injuries involves early detection, frequent position changes to alter distribution of pressure, meticulous skin care, and management of risk factors. <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Intervention measures can be guided with the use of the Braden scale used to assess risk. Changes in the patient’s condition will prompt reassessment of turning frequency and the need for pressure reducing surfaces.</p>
+<p>Possible adjustments to the care plan in a patient with a mild risk or score between 15-18 should include frequent turning, maximum remobilization efforts, heel protection, implement pressure reducing supportive surfaces, managing moisture, and adjusted diet or nutrition interventions.</p>
+<p>With moderate risk, scores between 13-14, in addition to mind intervention listed for moderate risk and implement 30-degree lateral position to help offload pressure with a revised turning schedule.</p>
+<p>High risk, between 10-12, should include mild and moderate risk interventions with the addition of turning patients frequently with small shifts in weight.</p>
+<p>At very high risk, score ≤9, implement frequent turning and reassess supportive surfaces. <a href="#references">(RNAO, 2005)</a></p>
+<p><br></br></p>
+<div id="healing-wounds" class="section level4">
+<h4>Healing Wounds</h4>
+<p>When injury already exists, risk factors should be managed to eliminate the development of the injury. As part of wound management, nurses are responsible for wound assessment, protection from infection, cleansing, debridement, management of exudate and maintaining moist environment to promote wound healing. <a href="#references">(Potter et al, 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="non-healing-wounds" class="section level4">
+<h4>Non-Healing Wounds</h4>
+<p>Moisture balance in contraindicated in these instances, the priority shifts to infection prevention. Conservative debridement and moisture reduction prevent the spread of infection. <a href="#references">(Sibbald et al, 2012)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="managing-risk-factors" class="section level2 tabset">
+<h2>Managing risk factors</h2>
+<p>The presence of any risk factor warrants intervention to minimize impact and protect the client from pressure injury development. Managing risk factors also promotes healing and management of pressure injuries after they develop.</p>
+<p><br></br></p>
+<div id="pressure-1" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Pressure</h3>
+<p>Standard mattresses do not aid in pressure redistribution. <a href="#references">(RNAO, 2005)</a></p>
+<p>There are specialised supportive surfaces are designed to help off-load or redistribute pressure to prevent skin breakdown.</p>
+<p><br></br></p>
+<div id="low-air-loss-mattress" class="section level4">
+<h4>Low-Air-Loss Mattress</h4>
+<p>Low-air-loss mattress is used as or on top of an existing mattress. The mattress helps redistribute pressure and manages heat and humidity with air flow.</p>
+<div class="figure">
+<img src="img/pressure-t.png" alt="Arjo-Huntleign low-air-loss" />
+<p class="caption">Arjo-Huntleign low-air-loss</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="nonpowered-surfaces" class="section level4">
+<h4>Nonpowered Surfaces</h4>
+<p>Nonpowered surfaces are made of foam or interconnected air-filled cells that do not require electricity. They redistribute pressure and promote air flow as the body is repositioned.</p>
+<div class="figure">
+<img src="img/pressure-t2.png" alt="Arjo-Huntleign Pentaflex mattres" />
+<p class="caption">Arjo-Huntleign Pentaflex mattres</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="air-fluidized-veds" class="section level4">
+<h4>Air-Fluidized Veds</h4>
+<p>Air-Fluidized beds redistributes pressure when patient is in contact with its surface. They utilize a medium created by air being forces through beads. Prevents skin breakdown and is used in patients with newly graphed surgical sites or for those with wounds with excessive moisture.</p>
+<div class="figure">
+<img src="img/pressure-t3.png" alt="Elite Turn – Quart Healthcare lateral rotaiton device" />
+<p class="caption">Elite Turn – Quart Healthcare lateral rotaiton device</p>
+</div>
+<p><br></br></p>
+</div>
+</div>
+<div id="shear-stressfriction" class="section level3">
+<h3>Shear Stress/Friction</h3>
+<p>Potential of injury due to shear or friction increases with patient’s reliance on others. Using proper body mechanics and lifting the patient with drawsheet instead of dragging them over the surface of the linen will help prevent injury. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Consult occupational therapy/ Physiotherapy for transfer, positioning techniques and devices. <a href="#references">(RNAO, 2005)</a></p>
+<p>Lateral 30- degree turn minimized the amount of direct pressure on the trochanter and limiting head elevation to 30 degrees or lower to help eliminate risk of shear related mechanical injury. <a href="#references">(RNAO, 2005)</a></p>
+<p>Friction injuries can be avoided with use of protective barriers such as transparent films or hydrocolloids. <a href="#references">(RNAO, 2005)</a></p>
+<p><br></br></p>
+</div>
+<div id="moisture-1" class="section level3">
+<h3>Moisture</h3>
+<p>Meticulous skin care to keep skin clean and dry especially with incontinence or exposure to body fluids. <a href="#references">(Potter et al, 2017)</a> Use absorbent pads and briefs to wick moisture away form the skin when moisture cannot be controlled. <a href="#references">(RNAO, 2005)</a></p>
+<p>When designing a skin care regime, avoid harsh soaps, hot water and irritating solutions. <a href="#references">(Aboud &amp; Manna, 2019)</a></p>
+<p>To maintain hydration of skin, non- irritating, pH balanced moisturizers and creams with minimal alcohol content can be used. <a href="#references">(RNAO, 2005)</a></p>
+<p><br></br></p>
+</div>
+<div id="impaired-mobility-1" class="section level3">
+<h3>Impaired Mobility</h3>
+<p>Use mobility aids promote independent positioning such as trapeze, transfer boards or bed rials. <a href="#references">(RNAO, 2005)</a></p>
+<p>Establish an individualised turning schedule and ensure function of supportive devices. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Turning at least every 2 hours so ischemic areas can recover, sooner depending on the risk, and using pillows and wedges to avoid contact between bony prominences. <a href="#references">(RNAO, 2005)</a></p>
+<p>Wedges can be used to maintain patient position with special attention on the bony prominences of the lower body. Pillows should be placed between the legs, under the calves and back to remove pressure form the back, buttock, and medial aspects on knees and heels. <a href="#references">(Abound &amp; Manna, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="decrease-sensory-perception" class="section level3">
+<h3>Decrease Sensory Perception</h3>
+<p>Assess for signs of skin breakdown and provide pressure- redistribution surface. <a href="#references">(Potter et al, 2017)</a></p>
+<p>For those restricted to chair, promote shifting of weight every 15 minutes, if client is unable, reposition every hour. <a href="#references">(RNAO, 2005)</a></p>
+<p><br></br></p>
+</div>
+<div id="nutrition" class="section level3">
+<h3>Nutrition</h3>
+<p>Assist with intake as necessary, assess teeth and dentures, ensure oral care, consult dietitian for nutritional evaluation as needed. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Adequate nutrition is essential for maintain skin integrity and healing and prevention of injury. Wound healing is dependant on availability of protein, vitamins A and C and trace minerals such as zinc and copper.</p>
+<p>Amino acids, Vitamin C, zinc and copper are all needed for the formation of collagen by fibroblasts. Zinc and Vitamin A also promotes epithelialization. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Recommended intake:</p>
+<ul>
+<li>Calories: 35-40 Kcal/kg/day or enough to maintain positive nitrogen balance (tissue repair)</li>
+<li>Protein: 1-1.5 g/kg/ day</li>
+<li>Vitamine C/ Acsorbic acid: 100-1000 mg/day</li>
+<li>Zinc: 30-35 mg</li>
+</ul>
+<p><br></br></p>
+</div>
+<div id="hydration" class="section level3">
+<h3>Hydration</h3>
+<p>Adequate hydration promotes skin integrity <a href="#references">(RNAO, 2005)</a></p>
+<p>Recommended fluid intake consists of 30-25mL/ kg/ day of unsweetened, non-alcoholic, non-caffeinated fluid. If patient is on air-fluidized bed increase intake by 10-5 mL/ Kg.</p>
+<p>Ensure adequate intake, dilute urine helps prevent skin irritation from incontinence. <a href="#references">(Potter et al, 2017)</a></p>
+<p><br></br></p>
+</div>
+<div id="pain-1" class="section level3">
+<h3>Pain</h3>
+<p>Staging of pressure ulcers are associated with increased pain with Stage 4 pressure ulcers being the cause of significant pain and discomfort. Pain on dressing changes caused by damage to delicate tissue can be mitigated with analgesic regimens and use of pain-relieving dressings such as those containing soft silicone. <a href="#references">(Lyder &amp; Ayello, 2008)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="patient-education" class="section level2">
+<h2>Patient Education</h2>
+<p>When providing patient and caregivers with information its important to address the leaning needs of the individual and be mindful of factors effecting adequate communication such as language barriers and level of education.</p>
+<p>For individuals who are at risk, discharge planning should include management of risk factors to prevent injury. Patient and caregivers should understand how risk factors contribute to injury and how intervention mitigates these risks. <a href="#references">(Potter et al, 2017)</a> Preventative measures may include daily inspection for erythema, signs of skin injury and signs of infection in those with existing injury. Other preventive measures may include turning every 2 hours or repositioning in seat every 15 minutes, proper topical skin care and adequate diet and hydration should be ensured. <a href="#references">(RNAO, 2005)</a></p>
+<p>The Family should be provided with access to resources and equipment for appropriate management. Intervention such as pressure relieving maneuvers should be individualised for the patient in their home environment.</p>
+<p>Define the objective and explain the purpose and proper body mechanics pertaining to mobility aid, pressure- redistribution surface or maneuver and assess the patient of families understanding.</p>
+<p>An effective evaluation measure is the teach-back method where the patient and family will state the purpose and describe function and proper use of the intervention they will be implementing in the community. <a href="#references">(Potter et al, 2017)</a></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="summary-of-guidelines" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Summary of Guidelines</h1>
+<p>Pressure ulcers are painful and preventable damage caused by external pressure, typically over a bony prominence, causing inadequate perfusion of the tissue. <a href="#references">(Potter et al, 2017)</a></p>
+<p>Healthy individuals can unconsciously redistribute weight and pressure on the skin, only becoming aware of discomfort when movement is restricted. <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Carful observation and management of risk factors aimed at prevention of pressure injury development in those identified to be at risk with use of validated assessment tool (Braden scale) on intake. <a href="#references">(RNAO, 2005)</a></p>
+<p>After damage has occurred, prevention measures protect against further ischemic damage. There in an increased risk of infection and wound healing measures are implemented. <a href="#references">(Hannon et al, 2016)</a></p>
+<p>Managing risk:</p>
+<p>reposition every 2 hours to allow ischemic areas to recover <a href="#references">(Hannon et al, 2016)</a> Patient should remain at a 30-degree lateral position offsets pressure on the trochanter (RNAO, 2005)</p>
+<p>Other prevention measures include topical skin care to control moisture especially in incontinent patients, adequate nutrition and hydration to promote wound healing, and provision of pressure leaving surfaces. <a href="#references">(Abound &amp; Manna, 2019)</a></p>
+<p><br></br></p>
+</div>
+<div id="references" class="section level1 tabset tabset-fade tabset-pills">
+<h1>References</h1>
+<p>Abound, A., &amp; Manna, B. (2019). Wound and Pressure Injury Management. StatPearls Publishing.</p>
+<p>Auday, B., College, G., Buratovich, M., Marrocco, G., &amp; Monglia, P. (2018), Magill’s medical guide (eighth edition). Pasadena, CA. Salem Press</p>
+<p>Braden, B., &amp; Bergstorm, N. (1998). Braden scale for predicting pressure sore risk. Prevention Plus, LLC. Retrieved from <a href="http://www.bradenscale.com/images/bradenscale.pdf">http://www.bradenscale.com/images/bradenscale.pdf</a></p>
+<p>Culver, K. (2018). Skin and soft tissue infection [Lecture Slides]. Retrieved from <a href="avenue.cllmcmaster.ca">avenue.cllmcmaster.ca</a></p>
+<p>Hannon, R. A., Pooler, C. &amp; Porth, C. (2016). Porth Pathophysiology: Concepts of altered health states (2nd Canadian ed.). Philadelphia: Lippincott, Williams &amp; Wilkins.</p>
+<p>Huang, L., Xia H., &amp; Zhu S. (2014). Ascitic Fluid Analysis in the Differential Diagnosis of Ascites: Focus on Cirrhotic Ascites. Journal of Clinical Translational Hepatology. 2 (1), 58-64</p>
+<p>Lyder, C., &amp; Ayello, E. (2008). Pressure ulcers: a patient safety issue. Agency for Healthcare Research and Quality (US). Retrieved from:<a href="https://www.ncbi.nlm.nih.gov/books/NBK2650/">https://www.ncbi.nlm.nih.gov/books/NBK2650/</a></p>
+<p>McCurdy, T. (2019). Inflammation Part II: Sepsis and Septic Shock [Online Learning Module]. Retrieved from <a href="avenue.cllmcmaster.ca">avenue.cllmcmaster.ca</a></p>
+<p>National Pressure Injury Advisory Panel. (2019). Prevention and Treatment of pressure Ulcers/ Injuries. Retrieved form <a href="https://npiap.com/page/resources">https://npiap.com/page/resources</a></p>
+<p>Potter, P.A., Perry, A. G., Stockert, P. Hall, A. M., Astle, B. J., &amp; Duggleby, W. (2017). Canadian fundamentals of nursing (6th ed.) Toronto, ON: Elsevier Mosby</p>
+<p>Registered Nurses Association of Ontario. (2005). Risk Assessment and Prevention of Pressure Ulcers. Retrieved from: <a href="https://rnao.ca/sites/rnaoca/files/Risk_Assessment_and_Prevention_of_Pressure_Ulcers.pdf">https://rnao.ca/sites/rnaoca/files/Risk_Assessment_and_Prevention_of_Pressure_Ulcers.pdf</a></p>
+<p>Sibbald, R., Goodman, L., Norton, L., Krasner, D., &amp; Ayello, e. (2012). Prevention and Treatment of Pressure Ulcers: Skin Therapy Letter. 17 (8)</p>
+<p>Sullivan, T., &amp; Barra, E. (2018). Diagnosis and management of cellulitis. Clinical Medicine. 18 (2): 160-163</p>
+<p>Taylor, T., &amp; Unakal, C. (2019). Staphlococcus Aureus. StatPearls Publishing LLC. Retrieved from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK441868/">https://www.ncbi.nlm.nih.gov/books/NBK441868/</a></p>
+<p>World Union of Wound Healing Societies. (2019). Wound exudate effective assessment and management [consensus document]. London, UK: Wounds International</p>
+<p><br></br></p>
+</div>
+<div id="feedback" class="section level1">
+<h1>Feedback</h1>
+<p><a href="https://nagras7.typeform.com/to/kCvi8g">Let me what you think!</a></p>
+<p><br></br> <br></br> <br></br></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
